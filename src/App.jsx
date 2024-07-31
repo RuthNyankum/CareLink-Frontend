@@ -9,6 +9,7 @@ import Reschedule from './pages/reschedule';
 import Contact from './pages/contact';
 import Admin from './pages/admin';
 import Home from './pages/home';
+import Account from './pages/account';
 
 function App() {
   const router = createBrowserRouter([
@@ -16,12 +17,12 @@ function App() {
       path: '/',
       element: <RootLayout />,
       children: [
+        // {
+        //   index: true,
+        //   element: <LandingPage />,
+        // },
         {
-          index: true,
-          element: <LandingPage />,
-        },
-        {
-          path: 'home',
+          index: 'true',
           element: <Home />,
         },
         {
@@ -43,6 +44,10 @@ function App() {
         {
           path: 'contact-us',
           element: <Contact />,
+        },
+        {
+          path: 'Register',
+          element: <Account />,
         },
         {
           path: 'admin',

@@ -1,20 +1,26 @@
-// src/components/Navbar.js
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDownIcon } from '@heroicons/react/16/solid';
 import N from '../constant';
+import {
+  Bars3Icon,
+  ChevronDownIcon,
+  XMarkIcon,
+} from '@heroicons/react/20/solid';
 
 const Navbar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(null); // Track which dropdown is open
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDropdown = (index) => {
-    setDropdownOpen(dropdownOpen === index ? null : index); // Toggle dropdown state
+    setDropdownOpen(dropdownOpen === index ? null : index);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Close dropdown if click is outside
       if (!event.target.closest('.relative')) {
         setDropdownOpen(null);
       }
@@ -31,17 +37,33 @@ const Navbar = () => {
       <div className="flex justify-between items-center max-w-4xl mx-auto">
         <Link to="/">
           <img src="path_to_logo" alt="Logo" className="h-8 w-8" />
-          {/* <span className="text-xl font-bold text-white">Logo</span> */}
         </Link>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex md:hidden">
+          <button
+            onClick={toggleMobileMenu}
+            className="text-white focus:outline-none"
+          >
+            {mobileMenuOpen ? (
+              <XMarkIcon className="h-6 w-6" />
+            ) : (
+              <Bars3Icon className="h-6 w-6" />
+            )}
+          </button>
+        </div>
+
+        <div
+          className={`md:flex items-center space-x-4 ${
+            mobileMenuOpen ? 'block' : 'hidden'
+          } md:block`}
+        >
           {N.NAVLINKS.map((item, index) => (
             <div key={item.name} className="relative">
               {item.subItems ? (
                 <>
                   <button
                     onClick={() => toggleDropdown(index)}
-                    className="flex items-center text-white hover:text-gray-700"
+                    className="flex items-center text-white hover:text-gray-700 focus:outline-none"
                   >
                     {item.name}
                     <ChevronDownIcon
@@ -57,7 +79,7 @@ const Navbar = () => {
                           key={subItem.name}
                           to={subItem.path}
                           className="block px-4 py-2 hover:bg-primary"
-                          onClick={() => setDropdownOpen(null)} // Close dropdown on click
+                          onClick={() => setDropdownOpen(null)}
                         >
                           {subItem.name}
                         </Link>

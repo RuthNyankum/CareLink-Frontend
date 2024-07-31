@@ -10,13 +10,13 @@ import patient3 from '../assets/images/patient3.jpg';
 
 const N = {
   NAVLINKS: [
-    {
-      name: 'Landing',
-      path: '/',
-    },
+    // {
+    //   name: 'Landing',
+    //   path: '/',
+    // },
     {
       name: 'Home',
-      path: '/home',
+      path: '/',
     },
     {
       name: 'About',
@@ -34,6 +34,10 @@ const N = {
     {
       name: 'Contact',
       path: '/contact-us',
+    },
+    {
+      name: 'Account',
+      path: '/register',
     },
     {
       name: 'Admin',
