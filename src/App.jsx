@@ -9,6 +9,8 @@ import Contact from './pages/contact';
 import Admin from './pages/admin';
 import Home from './pages/home';
 import Account from './pages/account';
+import Login from './pages/account/login';
+import SignUp from './pages/account/signUp';
 
 function App() {
   const router = createBrowserRouter([
@@ -44,18 +46,22 @@ function App() {
           path: 'contact-us',
           element: <Contact />,
         },
-        {
-          path: 'Register',
-          element: <Account />,
-        },
+        // {
+        //   path: 'Register',
+        //   element: <Account />,
+        // },
         {
           path: 'admin',
           element: <Admin />,
         },
-        // {
-        //   path: 'login',
-        //   element: <Login />,
-        // },
+        {
+          path: 'login',
+          element: <Login />,
+        },
+        {
+          path: 'signup',
+          element: <SignUp />,
+        },
       ],
     },
   ]);

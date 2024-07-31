@@ -35,10 +35,10 @@ const N = {
       name: 'Contact',
       path: '/contact-us',
     },
-    {
-      name: 'Account',
-      path: '/register',
-    },
+    // {
+    //   name: 'Account',
+    //   path: '/register',
+    // },
     {
       name: 'Admin',
       path: '/admin',
@@ -48,7 +48,7 @@ const N = {
   BUTTONDATA: [
     {
       title: 'New Patient',
-      link: '/sign-up',
+      link: '/signup',
       buttonText: 'Sign Up',
     },
     {
