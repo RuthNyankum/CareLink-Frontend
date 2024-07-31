@@ -22,7 +22,7 @@ const Home = () => {
 
       {/* Content Over Video */}
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white text-center p-4 z-10">
-        <h1 className="text-4xl font-bold mb-4">Welcome to MediConnect</h1>
+        <h1 className="text-4xl font-bold mb-4">Welcome to CareLink</h1>
         <p className="text-lg mb-4">Navigating Health with Ease</p>
 
         <Link
