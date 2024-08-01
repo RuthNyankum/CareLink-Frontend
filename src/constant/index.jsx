@@ -58,7 +58,7 @@ const N = {
     },
     {
       title: 'Admin',
-      link: '/admin-login',
+      link: '/adminlogin',
       buttonText: 'Login',
     },
   ],

@@ -11,6 +11,7 @@ import Home from './pages/home';
 import Account from './pages/account';
 import Login from './pages/account/login';
 import SignUp from './pages/account/signUp';
+import AdminLogin from './pages/admin/adminLogin';
 
 function App() {
   const router = createBrowserRouter([
@@ -53,6 +54,10 @@ function App() {
         {
           path: 'admin',
           element: <Admin />,
+        },
+        {
+          path: 'adminlogin',
+          element: <AdminLogin />,
         },
         {
           path: 'login',
