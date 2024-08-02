@@ -99,26 +99,26 @@ const N = {
   TESTIMONIALSDATA: [
     {
       image: patient1,
-      text: 'MediConnect has made it so much easier to manage my appointments. I love the convenience of booking online and getting reminders!',
+      text: 'CareLink has made it so much easier to manage my appointments. I love the convenience of booking online and getting reminders!',
       name: 'Sarah M.',
       role: 'Patient',
     },
     {
       image: yaw,
-      text: "As a doctor, MediConnect helps me keep track of my schedule and manage patient appointments efficiently. It's a game-changer for my practice.",
-      name: 'Dr. John D.',
+      text: "As a doctor, CareLink helps me keep track of my schedule and manage patient appointments efficiently. It's a game-changer for my practice.",
+      name: 'Dr. Yaw S.',
       role: 'Healthcare Provider',
     },
     {
       image: patient2,
-      text: "Booking appointments has never been this easy. MediConnect's user-friendly interface and real-time availability are fantastic.",
+      text: "Booking appointments has never been this easy. CareLink's user-friendly interface and real-time availability are fantastic.",
       name: 'Emily R.',
       role: 'Patient',
     },
     {
       image: patient3,
-      text: 'The reminder notifications are so helpful. I never miss an appointment now thanks to MediConnect!',
-      name: 'Michael T.',
+      text: 'The reminder notifications are so helpful. I never miss an appointment now thanks to CareLink!',
+      name: 'Michaella T.',
       role: 'Patient',
     },
   ],
