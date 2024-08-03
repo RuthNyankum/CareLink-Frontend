@@ -13,12 +13,12 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* About Section */}
         <div className="text-center md:text-left mb-6 md:mb-0">
-          <h4 className="text-2xl font-bold mb-2">MediConnect</h4>
+          <h4 className="text-2xl font-bold mb-2">CareLink</h4>
           <p className="text-sm mb-4">
             Your trusted partner in accessible healthcare.
           </p>
           <p className="text-xs">
-            © {new Date().getFullYear()} MediConnect. All rights reserved.
+            © {new Date().getFullYear()} CareLink. All rights reserved.
           </p>
         </div>
 

@@ -12,6 +12,7 @@ import Account from './pages/account';
 import Login from './pages/account/login';
 import SignUp from './pages/account/signUp';
 import AdminLogin from './pages/admin/adminLogin';
+import CancelAppointment from './pages/cancel/cancelAppointment';
 
 function App() {
   const router = createBrowserRouter([
@@ -42,6 +43,10 @@ function App() {
         {
           path: 'reschedule',
           element: <Reschedule />,
+        },
+        {
+          path: 'cancel',
+          element: <CancelAppointment />,
         },
         {
           path: 'contact-us',

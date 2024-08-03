@@ -4,6 +4,7 @@ import ophth from '../../../assets/images/eye.jpg';
 import emerg from '../../../assets/images/emeg.jpg';
 import diag from '../../../assets/images/diag1.jpg';
 import neuro from '../../../assets/images/neuro.jpg';
+import other from '../../../assets/images/consult.jpg';
 
 import {
   BellIcon,
@@ -93,6 +94,7 @@ export const departments = [
   { name: 'Dental', icon: '🦷' },
   { name: 'Ophthalmology', icon: '👁️' },
   { name: 'Emergency', icon: '🚑' },
+  { name: 'Others', icon: '🏬' },
 ];
 
 export const departmentDetails = {
@@ -160,5 +162,10 @@ export const departmentDetails = {
       'Advanced Emergency Equipment',
       'Rapid Diagnosis and Treatment',
     ],
+  },
+  Others: {
+    image: other,
+    description: 'These are other departments to know.',
+    features: ['General OPD', 'Obs and Gyeny', 'Psychiatrist', 'Dermatology'],
   },
 };

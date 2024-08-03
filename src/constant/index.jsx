@@ -29,6 +29,7 @@ const N = {
         { name: 'Profile', path: '/profile' },
         { name: 'Appointment', path: '/appointment' },
         { name: 'Reschedule', path: '/reschedule' },
+        { name: 'Cancel Appointment', path: '/cancel' },
       ],
     },
     {
