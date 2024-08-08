@@ -11,7 +11,7 @@ const Login = () => {
           <img
             src={doc}
             alt="Doctors Picture"
-            className="rounded-3xl w-full h-auto object-cover"
+            className="rounded-tr-3xl rounded-br-3xl w-full h-auto object-cover"
           />
         </div>
       </div>

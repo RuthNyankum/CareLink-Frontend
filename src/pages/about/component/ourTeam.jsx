@@ -6,7 +6,7 @@ const OurTeam = () => {
     <div>
       <div className="flex flex-col items-center ">
         <h1 className="font-bold text-[2.5rem]">Our Team</h1>
-        <p className="text-center">
+        <p className="text-center mb-3">
           Our team at CareLink includes experienced healthcare professionals,
           tech enthusiasts, and dedicated support staff. We're passionate <br />
           about making healthcare more accessible and are committed to providing
@@ -15,7 +15,7 @@ const OurTeam = () => {
       </div>
 
       <div>
-        <h2 className="font-bold text-[2rem] my-12 text-center">Our Doctors</h2>
+        {/* <h2 className="font-bold text-[2rem] my-12 text-center">Our Doctors</h2> */}
 
         <div className="flex gap-4">
           {N.DOCTORS.map((doctor, index) => (

@@ -1,14 +1,7 @@
-// // src/config.js
-// const config = {
-//     apiBaseUrl: 'http://your-backend-api-url.com',
-//   };
-
-
-//   export default config;
-
-
 import axios from "axios";
 
-const apiBaseUrl = import.meta.env.VITE_BASE_URL;
+const baseUrl = import.meta.env.VITE_BASE_URL;
+// console.log('ruthuuuu', baseUrl)
 
-export const apiClient = axios.create({baseURL:baseURL});
+export const apiClient = axios.create({baseURL:baseUrl});
+// console.log('ruthuuuu', apiClient)

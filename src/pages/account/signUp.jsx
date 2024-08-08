@@ -10,7 +10,7 @@ const SignUp = () => {
           <img
             src={doct}
             alt="Doctors Picture"
-            className="rounded-3xl w-full h-auto object-cover"
+            className="rounded-tl-3xl rounded-bl-3xl w-full h-auto object-cover"
           />
         </div>
         <FormSignup />
