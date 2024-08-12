@@ -4,7 +4,7 @@ import { featureList } from './aboutConstant';
 const Features = () => {
   return (
     <div className="my-24 flex flex-col justify-center items-center bg-primary">
-      <h1 className="font-bold text-[2.5rem] my-12">Features</h1>
+      <h1 className="font-bold text-5xl my-12">Features</h1>
 
       <div className="flex flex-wrap gap-10 justify-center mb-12">
         {featureList.map(({ icon: Icon, color, text }, index) => (

@@ -162,7 +162,7 @@ import { EyeIcon } from '@heroicons/react/24/outline';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { IoEyeOffOutline } from 'react-icons/io5';
-import 'react-phone-input-2/lib/style.css';
+// import 'react-phone-input-2/lib/style.css';
 import { apiLogIn } from '../../services/auth';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -190,7 +190,7 @@ const FormLogin = () => {
       // addToLocalStorage(res.data.accessToken, res.data.user);
       toast.success(res.data);
       setTimeout(() => {
-        navigate('/about-us');
+        navigate('/dashboard');
       }, 1000); // Add a delay to see the toast
 
       // console.log('res', res.data, res);
@@ -220,7 +220,7 @@ const FormLogin = () => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-[#2222] w-full md:w-1/2 pt-7 px-6 md:px-12 lg:px-32 rounded-tl-3xl rounded-bl-3xl">
+    <div className="flex flex-col items-center bg-[#2222] w-full md:w-1/2 pt-7 px-6 md:px-12 lg:px-32 rounded-tl-3xl rounded-bl-3xl font-poppins-regular">
       <div className="text-[2rem] mb-12 md:mb-24 text-white">LOGO</div>
       <div className="text-white w-full">
         <div className="mb-10 md:mb-16">

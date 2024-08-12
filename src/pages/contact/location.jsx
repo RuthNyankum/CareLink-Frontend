@@ -20,7 +20,9 @@ const Location = () => {
       <div className="bg-gray-800 bg-cover bg-center rounded-md shadow-md p-8 w-full max-w-5xl mx-auto">
         <h1 className="text-black text-3xl font-bold mb-4">Our Location</h1>
         <p className="text-black text-lg mb-4">You can find us at:</p>
-        <p className="text-black mb-8">Independence Ave, Accra, Ghana</p>
+        <p className="text-black mb-8 text-lg">
+          Independence Ave, Accra, Ghana
+        </p>
         <div className="w-full h-64 mb-8">
           <MapContainer
             center={defaultCenter}
@@ -38,10 +40,10 @@ const Location = () => {
         </div>
         <div className="text-black">
           <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
-          <p>
+          <p className="text-lg">
             <strong>Phone:</strong> (233) 123-456-789
           </p>
-          <p>
+          <p className="text-lg">
             <strong>Email:</strong> contact@carelink.com
           </p>
         </div>

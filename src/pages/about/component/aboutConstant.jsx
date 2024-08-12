@@ -1,6 +1,7 @@
 import cadio from '../../../assets/images/cardiology.jpg';
 import dental from '../../../assets/images/dental.jpg';
-import ophth from '../../../assets/images/eye.jpg';
+import obs from '../../../assets/images/obg.jpg';
+// import ophth from '../../../assets/images/eye.jpg';
 import emerg from '../../../assets/images/emeg.jpg';
 import diag from '../../../assets/images/diag1.jpg';
 import neuro from '../../../assets/images/neuro.jpg';
@@ -90,10 +91,11 @@ export const steps = [
 export const departments = [
   { name: 'Cardiology', icon: '❤️' },
   { name: 'Neurology', icon: '🧠' },
-  { name: 'Diagnostics', icon: '🔬' },
   { name: 'Dental', icon: '🦷' },
-  { name: 'Ophthalmology', icon: '👁️' },
+  { name: 'Gynecology', icon: '👩‍⚕️' },
   { name: 'Emergency', icon: '🚑' },
+  { name: 'Diagnostics', icon: '🔬' },
+
   { name: 'Others', icon: '🏬' },
 ];
 
@@ -120,17 +122,7 @@ export const departmentDetails = {
       'Patient-Centered Care',
     ],
   },
-  Diagnostics: {
-    image: diag,
-    description:
-      'State-of-the-art diagnostic facilities for accurate and timely diagnoses.',
-    features: [
-      'Advanced Imaging Technology',
-      'Accurate Lab Testing',
-      'Expert Radiologists',
-      'Comprehensive Diagnostics',
-    ],
-  },
+
   Dental: {
     image: dental,
     description:
@@ -142,17 +134,19 @@ export const departmentDetails = {
       'Orthodontics and Braces',
     ],
   },
-  Ophthalmology: {
-    image: ophth,
+
+  Gynecology: {
+    image: obs,
     description:
-      'Eye care services including exams, treatments, and surgeries for various eye conditions.',
+      'Discover our Obstetrics and Gynecology department, providing exceptional care for women’s health, including prenatal, childbirth, and gynecological services.',
     features: [
-      'Comprehensive Eye Exams',
-      'Cataract Surgery',
-      'Laser Eye Surgery',
-      'Treatment for Eye Diseases',
+      'Experienced OB/GYN Specialists',
+      'Comprehensive Prenatal Care',
+      'Advanced Gynecological Treatments',
+      'Personalized Women’s Health Services',
     ],
   },
+
   Emergency: {
     image: emerg,
     description: '24/7 emergency care for all urgent medical conditions.',
@@ -163,9 +157,25 @@ export const departmentDetails = {
       'Rapid Diagnosis and Treatment',
     ],
   },
+  Diagnostics: {
+    image: diag,
+    description:
+      'State-of-the-art diagnostic facilities for accurate and timely diagnoses.',
+    features: [
+      'Advanced Imaging Technology',
+      'Accurate Lab Testing',
+      'Expert Radiologists',
+      'Comprehensive Diagnostics',
+    ],
+  },
   Others: {
     image: other,
     description: 'These are other departments to know.',
-    features: ['General OPD', 'Obs and Gyeny', 'Psychiatrist', 'Dermatology'],
+    features: [
+      'General OPD',
+      'Psychiatrist',
+      'Dermatology',
+      'Ophthalmology etc.',
+    ],
   },
 };

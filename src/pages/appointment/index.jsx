@@ -4,7 +4,7 @@ import abstract from '../../assets/images/abstract.jpg';
 
 const Appointment = () => {
   return (
-    <div className="min-h-screen p-6 md:p-12 lg:p-16 mt-7">
+    <div className="min-h-screen p-6 md:p-12 lg:p-16 mt-7 font-poppins-regular">
       <header className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
           CareLink

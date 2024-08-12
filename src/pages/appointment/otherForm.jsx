@@ -13,7 +13,7 @@ const OtherForm = ({ resetForm }) => (
           type="text"
           name="name"
           id="name"
-          placeholder="Enter the full name"
+          placeholder="Enter your name"
           className="w-full h-14 px-4 py-2 mt-2 placeholder-gray-400 text-black rounded-lg"
         />
       </label>
@@ -24,6 +24,19 @@ const OtherForm = ({ resetForm }) => (
           name="relationship"
           id="relationship"
           placeholder="Enter your relationship with the patient"
+          className="w-full h-14 px-4 py-2 mt-2 placeholder-gray-400 text-black rounded-lg"
+        />
+      </label>
+    </div>
+
+    <div className="flex flex-col md:flex-row gap-5 mt-5 ml-4 mr-4">
+      <label htmlFor="name" className="block w-full text-lg">
+        Full Name
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter the name of the person you are booking for"
           className="w-full h-14 px-4 py-2 mt-2 placeholder-gray-400 text-black rounded-lg"
         />
       </label>

@@ -33,8 +33,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-primary p-4 shadow-lg z-20">
-      <div className="flex justify-between items-center max-w-4xl mx-auto">
+    <nav className="fixed top-0 left-0 w-full bg-primary p-4 shadow-lg z-20 font-poppins-regular">
+      <div className="flex justify-between items-center max-w-4xl mx-auto text-xl">
         <Link to="/">
           <img src="path_to_logo" alt="Logo" className="h-8 w-8" />
         </Link>

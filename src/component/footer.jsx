@@ -10,22 +10,22 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8  mt-3">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center font-poppins-regular">
         {/* About Section */}
         <div className="text-center md:text-left mb-6 md:mb-0">
           <h4 className="text-2xl font-bold mb-2">CareLink</h4>
-          <p className="text-sm mb-4">
+          <p className="text-lg mb-4">
             Your trusted partner in accessible healthcare.
           </p>
-          <p className="text-xs">
+          <p className="text-sm">
             © {new Date().getFullYear()} CareLink. All rights reserved.
           </p>
         </div>
 
         {/* Quick Links Section */}
         <div className="text-center md:text-left mb-6 md:mb-0">
-          <h5 className="text-lg font-semibold mb-2">Quick Links</h5>
-          <ul className="list-none space-y-1">
+          <h5 className="text-xl font-semibold mb-2">Quick Links</h5>
+          <ul className="list-none space-y-1 text-lg">
             <li>
               <a href="#home" className="hover:underline hover:text-gray-400">
                 Home
@@ -57,7 +57,7 @@ const Footer = () => {
 
         {/* Social Media Section */}
         <div>
-          <h3 className="text-lg font-semibold mb-2">Social Links</h3>
+          <h3 className="text-xl font-semibold mb-2">Social Links</h3>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a
               href="https://facebook.com"

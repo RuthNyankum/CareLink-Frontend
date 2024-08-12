@@ -21,7 +21,7 @@ const CAncel = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 p-6 md:p-12 lg:p-16 flex items-center justify-center">
+    <div className="min-h-screen bg-gray-900 p-6 md:p-12 lg:p-16 flex items-center justify-center font-poppins-regular">
       {!showCancelForm ? (
         <div className="text-center text-black">
           <h1 className="text-3xl md:text-5xl font-bold mb-8">

@@ -9,7 +9,7 @@ import FutureGoals from './component/futureGoals';
 
 const About = () => {
   return (
-    <div>
+    <div className="font-poppins-regular">
       <AboutHero />
       <Features />
       <HowItWorks />

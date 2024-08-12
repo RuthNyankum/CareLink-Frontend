@@ -80,16 +80,16 @@ const N = {
       name: 'Dr. Bown Spencer',
       specialty: 'Cardiologist',
     },
-    {
-      img: docas,
-      name: 'Dr. Dorcas Nyankum',
-      specialty: 'General Surgeon',
-    },
-    {
-      img: baker,
-      name: 'Dr. Michelle Baker',
-      specialty: 'Dermatologist',
-    },
+    // {
+    //   img: docas,
+    //   name: 'Dr. Dorcas Nyankum',
+    //   specialty: 'General Surgeon',
+    // },
+    // {
+    //   img: baker,
+    //   name: 'Dr. Michelle Baker',
+    //   specialty: 'Dermatologist',
+    // },
     {
       img: lisa,
       name: 'Dr. Lisa Foster',
@@ -123,6 +123,14 @@ const N = {
       role: 'Patient',
     },
   ],
+
+  /////ADDED THIS FOR THE RESHEDULE APPOINTMENT
+  CURRENTAPPOINTMENT: {
+    date: '2024-08-10',
+    time: '10:00 AM',
+    doctor: 'Dr. John Doe',
+    department: 'Cardiology',
+  },
 };
 
 export default N;

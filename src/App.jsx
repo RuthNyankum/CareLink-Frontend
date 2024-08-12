@@ -8,11 +8,15 @@ import Reschedule from './pages/reschedule';
 import Contact from './pages/contact';
 import Admin from './pages/admin';
 import Home from './pages/home';
-import Account from './pages/account';
 import Login from './pages/account/login';
 import SignUp from './pages/account/signUp';
 import AdminLogin from './pages/admin/adminLogin';
 import Cancel from './pages/cancel';
+import DashboardLayout from './pages/patientDashboard';
+import Overview from './pages/patientDashboard/overview';
+import FilledAppointment from './pages/patientDashboard/filledAppointment';
+import Chat from './pages/patientDashboard/chat';
+import FilledProfile from './pages/patientDashboard/filledProfile';
 
 function App() {
   const router = createBrowserRouter([
@@ -43,6 +47,28 @@ function App() {
         {
           path: 'reschedule',
           element: <Reschedule />,
+        },
+        {
+          path: '/dashboard',
+          element: <DashboardLayout />,
+          children: [
+            {
+              index: true,
+              element: <Overview />,
+            },
+            {
+              path: 'profile',
+              element: <FilledProfile />,
+            },
+            {
+              path: 'appointment',
+              element: <FilledAppointment />,
+            },
+            {
+              path: 'chat',
+              element: <Chat />,
+            },
+          ],
         },
         {
           path: 'cancel',

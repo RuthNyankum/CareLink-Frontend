@@ -158,11 +158,14 @@ const ContactForm = () => {
         className="bg-gray-800 bg-cover bg-center rounded-md shadow-md p-8 w-full max-w-5xl mx-auto"
         style={{ backgroundImage: `url(${abstract})`, opacity: 0.8 }}
       >
-        <h1 className="text-white text-3xl font-bold mb-4">Contact Us</h1>
-        <form onSubmit={handleSubmit} className="w-full max-w-3xl mx-auto">
+        {/* <h1 className="text-white text-3xl font-bold mb-4">Contact Us</h1> */}
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-3xl mx-auto text-lg"
+        >
           <div className="mb-4">
             <label
-              className="block text-white text-sm font-bold mb-2"
+              className="block text-white text-lg font-bold mb-2"
               htmlFor="name"
             >
               Name
@@ -179,7 +182,7 @@ const ContactForm = () => {
           </div>
           <div className="mb-4">
             <label
-              className="block text-white text-sm font-bold mb-2"
+              className="block text-white text-lg font-bold mb-2"
               htmlFor="email"
             >
               Email
@@ -196,7 +199,7 @@ const ContactForm = () => {
           </div>
           <div className="mb-4">
             <label
-              className="block text-white text-sm font-bold mb-2"
+              className="block text-white text-lg font-bold mb-2"
               htmlFor="subject"
             >
               Subject
@@ -213,7 +216,7 @@ const ContactForm = () => {
           </div>
           <div className="mb-6">
             <label
-              className="block text-white text-sm font-bold mb-2"
+              className="block text-white text-lg font-bold mb-2"
               htmlFor="message"
             >
               Message
@@ -230,7 +233,7 @@ const ContactForm = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="bg-primary hover:bg-secondary text-black font-bold py-4 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-primary hover:bg-secondary text-white font-bold py-4 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Send Message

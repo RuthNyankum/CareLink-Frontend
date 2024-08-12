@@ -19,7 +19,7 @@ export const doctors = {
   1: [
     {
       id: 'a',
-      name: 'Dr. Brown Spencer',
+      name: 'Dr Yaw Sekyi',
       specialty: 'Cardiologist',
       image: doc2,
     },
@@ -35,7 +35,7 @@ export const doctors = {
   2: [
     {
       id: 'k',
-      name: 'Dr. Sarah Hernandez',
+      name: 'Dr Ruth Snow',
       specialty: 'Neurologist',
       image: doc1,
     },
@@ -50,19 +50,19 @@ export const doctors = {
   3: [
     {
       id: 'z',
-      name: 'Dr. Anthony Harris',
+      name: 'Dr Anthony Spencer',
       specialty: 'Medical Oncologist',
       image: doc3,
     },
     {
       id: 'aa',
-      name: 'Dr. Rachel King',
+      name: 'Dr Vidash Daizey',
       specialty: 'Radiation Oncologist',
       image: doc4,
     },
     {
       id: 'bb',
-      name: 'Dr. Edward Young',
+      name: 'Dr Yaw Sekyi',
       specialty: 'Surgical Oncologist',
       image: doc3,
     },
@@ -76,7 +76,7 @@ export const doctors = {
     },
     {
       id: 'ff',
-      name: 'Dr. Gregory Parker',
+      name: 'Dr Daniel Sidsaya',
       specialty: 'Interventional Radiologist',
       image: doc3,
     },
@@ -90,7 +90,7 @@ export const doctors = {
   5: [
     {
       id: 'jj',
-      name: 'Dr. Angela Cooper',
+      name: 'Dr Lisa Foster',
       specialty: 'Obstetrician',
       image: doc5,
     },
@@ -104,7 +104,7 @@ export const doctors = {
   6: [
     {
       id: 'oo',
-      name: 'Dr. Michael Turner',
+      name: 'Dr. Richard Lewis',
       specialty: 'General Surgeon',
       image: doc4,
     },
@@ -116,7 +116,7 @@ export const doctors = {
     },
     {
       id: 'qq',
-      name: 'Dr. Daniel Harris',
+      name: 'Dr Daniel Sidsaya',
       specialty: 'Neurosurgeon',
       image: doc4,
     },
@@ -130,13 +130,13 @@ export const doctors = {
     },
     {
       id: 'ff',
-      name: 'Dr. Gregory Parker',
+      name: 'Dr Anthony Spencer',
       specialty: 'General Physician',
       image: doc3,
     },
     {
       id: 'k',
-      name: 'Dr. Sarah Hernandez',
+      name: 'Dr Ruth Snow',
       specialty: 'General Physician',
       image: doc1,
     },

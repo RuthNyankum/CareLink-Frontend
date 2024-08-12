@@ -242,7 +242,7 @@ const FormSignup = () => {
   };
 
   return (
-    <div className="bg-[#2222] w-full md:w-1/2 pt-7 px-6 md:px-32 rounded-tl-3xl rounded-bl-3xl">
+    <div className="bg-[#2222] w-full md:w-1/2 pt-7 px-6 md:px-32 rounded-tl-3xl rounded-bl-3xl font-poppins-regular">
       <div className="text-[2rem] mb-8 md:mb-10 text-white">LOGO</div>
       <div className="text-white">
         <div className="mb-8 md:mb-14">

@@ -50,7 +50,7 @@ const CancelAppointment = ({ currentAppointment, onClose }) => {
         <form>
           <label
             htmlFor="reason"
-            className="block mb-2 font-semibold text-white"
+            className="block mb-2 font-semibold text-white text-lg"
           >
             Reason for Cancellation
           </label>

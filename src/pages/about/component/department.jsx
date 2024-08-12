@@ -12,16 +12,16 @@ const Department = () => {
     <div className="bg-[#f2f2f2]">
       {' '}
       <div className="container mx-auto p-4 mt-36 ">
-        <h2 className="text-2xl font-bold mb-4 mt-5 text-center text-[2.5rem]">
+        <h2 className="text-5xl font-bold mb-4 mt-5 text-center ">
           Our Department
         </h2>
-        <p className=" text-gray-600 text-center">
+        <p className=" text-gray-600 text-center text-lg">
           Learn more about our departments and services.
         </p>
 
         <div className="flex flex-col lg:flex-row my-8">
           <div className="w-full lg:w-1/4 bg-gray-100 p-4">
-            <ul className="mt-10 lg:mt-28">
+            <ul className="mt-9 lg:mt-24">
               {departments.map((department) => (
                 <li
                   key={department.name}
@@ -33,7 +33,7 @@ const Department = () => {
                   onClick={() => handleDepartmentClick(department.name)}
                 >
                   <span className="mr-2">{department.icon}</span>
-                  <span>{department.name}</span>
+                  <span className="text-lg">{department.name}</span>
                 </li>
               ))}
             </ul>
@@ -47,13 +47,13 @@ const Department = () => {
                 className="w-full h-52 object-cover rounded-lg mb-4 lg:mb-8"
               />
               <div className="flex flex-col justify-center">
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4">
                   About the {selectedDepartment.toLowerCase()}
                 </h3>
-                <p className="mb-4">
+                <p className="mb-4 text-lg">
                   {departmentDetails[selectedDepartment].description}
                 </p>
-                <div className="flex flex-wrap mb-4">
+                <div className="flex flex-wrap mb-4 text-lg">
                   {departmentDetails[selectedDepartment].features.map(
                     (feature, index) => (
                       <div key={index} className="w-full lg:w-1/2 mb-2 lg:mb-0">
@@ -64,7 +64,7 @@ const Department = () => {
                     )
                   )}
                 </div>
-                <button className="px-4 py-2 bg-teal-500 text-white rounded-lg w-max">
+                <button className="px-4 py-2 bg-teal-500 text-white rounded-lg w-max text-lg">
                   Contact Us
                 </button>
               </div>

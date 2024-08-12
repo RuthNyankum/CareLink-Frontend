@@ -66,7 +66,7 @@ import N from '../../constant';
 
 const Home = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden font-poppins-regular">
       {/* Video Background */}
       <video
         autoPlay
@@ -81,12 +81,12 @@ const Home = () => {
 
       {/* Content Over Video */}
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white text-center p-4 z-10">
-        <h1 className="text-4xl font-bold mb-4">Welcome to CareLink</h1>
+        <h1 className="text-5xl font-bold mb-4">Welcome to CareLink</h1>
         <p className="text-lg mb-4">Navigating Health with Ease</p>
 
         <Link
           to="/about-us"
-          className="flex items-center text-lg space-x-2 mb-8"
+          className="flex items-center text-xl space-x-2 mb-8"
         >
           <span>Explore our site to learn more.</span>
           <ArrowRightIcon className="h-5 w-5 text-primary" />
@@ -95,9 +95,9 @@ const Home = () => {
         <div className="flex flex-col md:flex-row gap-10 md:gap-36 mt-28">
           {N.BUTTONDATA.map(({ title, link, buttonText }, index) => (
             <div key={index} className="text-center">
-              <p className="text-[1.5rem] mb-2">{title}</p>
+              <p className="text-3xl mb-2">{title}</p>
               <Link to={link}>
-                <button className="text-[1rem] px-9 py-2 bg-primary rounded-xl">
+                <button className="text-xl px-9 py-2 bg-primary rounded-xl">
                   {buttonText}
                 </button>
               </Link>

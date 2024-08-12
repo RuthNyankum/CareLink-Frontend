@@ -4,7 +4,7 @@ import SignUp from './signUp';
 
 const Account = () => {
   return (
-    <div>
+    <div className="font-poppins-regular">
       <SignUp />
       <Login />
     </div>

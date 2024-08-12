@@ -8,7 +8,7 @@ import ConsentForm from './consentForm';
 const Profile = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 p-4 mt-32">
-      <div className="relative bg-gray-800 rounded-md shadow-md p-8 w-full max-w-6xl flex flex-col items-center">
+      <div className="relative bg-gray-800 rounded-md shadow-md p-8 w-full max-w-6xl flex flex-col items-center font-poppins-regular">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center rounded-md"

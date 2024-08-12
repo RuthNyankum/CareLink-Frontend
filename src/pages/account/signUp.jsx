@@ -4,7 +4,7 @@ import FormSignup from './formSignup';
 
 const SignUp = () => {
   return (
-    <div className="mt-10 md:mt-32">
+    <div className="mt-10 md:mt-32 font-poppins-regular">
       <div className="flex flex-col md:flex-row justify-center mx-4 md:mx-28 bg-black/85 rounded-3xl overflow-hidden">
         <div className="hidden md:flex md:w-1/2 h-full items-center justify-center">
           <img

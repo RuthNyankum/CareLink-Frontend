@@ -4,9 +4,9 @@ import N from '../../../constant';
 const OurTeam = () => {
   return (
     <div>
-      <div className="flex flex-col items-center ">
-        <h1 className="font-bold text-[2.5rem]">Our Team</h1>
-        <p className="text-center mb-3">
+      <div className="flex flex-col items-center mt-10">
+        <h1 className="font-bold text-5xl">Our Team</h1>
+        <p className="text-center mb-3 text-lg">
           Our team at CareLink includes experienced healthcare professionals,
           tech enthusiasts, and dedicated support staff. We're passionate <br />
           about making healthcare more accessible and are committed to providing
@@ -30,8 +30,8 @@ const OurTeam = () => {
                 {/* <p className="text-[1.6rem]">{doctor.name}</p>
                 <p className="text-[1.2rem]">{doctor.specialty}</p> */}
                 <div className="p-4">
-                  <p className="text-lg font-semibold">{doctor.name}</p>
-                  <p className="text-sm text-gray-600">{doctor.specialty}</p>
+                  <p className="text-2xl font-semibold">{doctor.name}</p>
+                  <p className="text-lg text-gray-600">{doctor.specialty}</p>
                 </div>
               </div>
             </div>
