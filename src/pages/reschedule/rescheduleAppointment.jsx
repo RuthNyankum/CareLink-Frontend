@@ -139,7 +139,7 @@ const RescheduleAppointment = ({ currentAppointment, onClose }) => {
   return (
     <div className="min-h-screen flex items-center justify-center p-6 md:p-12 lg:p-16 mt-4">
       <div
-        className="relative bg-cover bg-center bg-no-repeat p-6 md:p-12 lg:p-16 rounded-xl shadow-lg w-full max-w-4xl"
+        className="relative bg-cover bg-center bg-no-repeat p-6 md:p-12 lg:p-16 rounded-xl shadow-lg w-full max-w-4xl text-lg"
         style={{ backgroundImage: `url(${abstract})`, opacity: 0.8 }}
       >
         {/* Optional background overlay for readability */}
@@ -174,7 +174,7 @@ const RescheduleAppointment = ({ currentAppointment, onClose }) => {
             ))}
           </div>
 
-          <form>
+          <form className="text-lg">
             <div className="mb-6">
               <label
                 htmlFor="newDate"

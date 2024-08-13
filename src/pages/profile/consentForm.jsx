@@ -22,6 +22,7 @@ const ConsentForm = () => {
 
   return (
     <form
+      className="text-lg"
       onSubmit={handleSubmit}
       //   className="bg-gray-800 p-8 rounded-md shadow-md w-full max-w-md mx-auto"
     >

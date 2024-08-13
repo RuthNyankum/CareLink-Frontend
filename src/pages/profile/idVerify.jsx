@@ -30,7 +30,7 @@ const IdVerification = () => {
       <h1 className="text-2xl font-bold mb-5 text-white">
         Identification and Verification
       </h1>
-      <form>
+      <form className="text-lg">
         <div>
           <label htmlFor="id" className="block text-gray-700 mb-2 text-white">
             Identification type
@@ -96,7 +96,7 @@ const IdVerification = () => {
           >
             <input {...getInputProps()} />
             <CloudArrowUpIcon className="w-12 h-12 mx-auto text-gray-400" />
-            <p className="mt-2 text-sm text-gray-600">
+            <p className="mt-2 text-lg text-gray-600">
               {isDragActive ? (
                 'Drop the files here ...'
               ) : (
@@ -105,7 +105,7 @@ const IdVerification = () => {
                 </>
               )}
             </p>
-            <p className="mt-2 text-xs text-gray-500">
+            <p className="mt-2 text-sm text-gray-500">
               SVG, PNG, JPG or GIF (max. 800x400px)
             </p>
           </div>

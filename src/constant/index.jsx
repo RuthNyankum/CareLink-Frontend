@@ -7,6 +7,8 @@ import lisa from '../assets/images/doc5.jpg';
 import patient1 from '../assets/images/patient1.png';
 import patient2 from '../assets/images/patient2.jpg';
 import patient3 from '../assets/images/patient3.jpg';
+import { BiCalendarCheck, BiHourglass } from 'react-icons/bi';
+import { IoWarningOutline } from 'react-icons/io5';
 
 const N = {
   NAVLINKS: [
@@ -131,6 +133,70 @@ const N = {
     doctor: 'Dr. John Doe',
     department: 'Cardiology',
   },
+
+  APPOINTMENT: [
+    {
+      patient: 'Phoenix Baker',
+      date: 'Jan 4, 2022',
+      status: 'Scheduled',
+      doctor: 'Dr. Alex Ramirez',
+      doctorAvatar: 'https://via.placeholder.com/40',
+      statusColor: 'text-green-500',
+    },
+    {
+      patient: 'Candice Wu',
+      date: 'Jan 2, 2022',
+      status: 'Pending',
+      doctor: 'Dr. Michael May',
+      doctorAvatar: 'https://via.placeholder.com/40',
+      statusColor: 'text-yellow-500',
+    },
+    {
+      patient: 'Lana Steiner',
+      date: 'Jan 4, 2022',
+      status: 'Cancelled',
+      doctor: 'Dr. Jasmine Lee',
+      doctorAvatar: 'https://via.placeholder.com/40',
+      statusColor: 'text-red-500',
+    },
+    // {
+    //   patient: 'Drew Cano',
+    //   date: 'Jan 8, 2022',
+    //   status: 'Scheduled',
+    //   doctor: 'Dr. Hardik Sharma',
+    //   doctorAvatar: 'https://via.placeholder.com/40',
+    //   statusColor: 'text-green-500',
+    // },
+    // {
+    //   patient: 'Natali Craig',
+    //   date: 'Jan 6, 2022',
+    //   status: 'Pending',
+    //   doctor: 'Dr. Alyana Cruz',
+    //   doctorAvatar: 'https://via.placeholder.com/40',
+    //   statusColor: 'text-yellow-500',
+    // },
+  ],
+
+  OVERVIEW: [
+    {
+      icon: BiCalendarCheck,
+      number: '3',
+      text: 'Total number of scheduled appointment',
+      color: 'text-yellow-500',
+    },
+    {
+      icon: BiHourglass,
+      number: '5',
+      text: 'Total number of pending appointment',
+      color: 'text-blue-500',
+    },
+    {
+      icon: IoWarningOutline,
+      number: '2',
+      text: 'Total number of cancelled appointment',
+      color: 'text-red-500',
+    },
+  ],
 };
 
 export default N;

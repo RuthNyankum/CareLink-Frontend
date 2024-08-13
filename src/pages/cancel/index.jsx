@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CancelAppointment from './cancelAppointment';
+import Navbar from '../../component/navbar';
 // import CancelAppointment from './CancelAppointment';
 
 const CAncel = () => {
@@ -21,7 +22,8 @@ const CAncel = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 p-6 md:p-12 lg:p-16 flex items-center justify-center font-poppins-regular">
+    <div className="min-h-screen bg-gray-900 p-6 md:p-12 lg:p-16 flex items-center justify-center font-poppins-regular text-lg">
+      <Navbar />
       {!showCancelForm ? (
         <div className="text-center text-black">
           <h1 className="text-3xl md:text-5xl font-bold mb-8">

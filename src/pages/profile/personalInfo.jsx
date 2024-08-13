@@ -19,12 +19,12 @@ const PersonalInfo = () => {
       <h1 className="text-2xl font-bold mb-5 text-white">
         Personal Information
       </h1>
-      <form>
+      <form className="text-lg">
         <div className="flex flex-wrap -mx-2 mb-4">
           <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
             <label
               htmlFor="firstname"
-              className="block text-gray-700 mb-2 text-white"
+              className="block text-gray-700 mb-2 text-white "
             >
               Firstname
             </label>

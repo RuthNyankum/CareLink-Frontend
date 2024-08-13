@@ -86,6 +86,21 @@ function App() {
           path: 'admin',
           element: <Admin />,
         },
+
+        // {
+        //   path: '/adminDashboard',
+        //   element: <DashboardLayout />,
+        //   children: [
+        //     {
+        //       index: true,
+        //       element: <Overview />,
+        //     },
+        //     {
+        //       path: 'profile',
+        //       element: <PatientProfile />,
+        //     },
+        //   ],
+        // },
         {
           path: 'adminlogin',
           element: <AdminLogin />,

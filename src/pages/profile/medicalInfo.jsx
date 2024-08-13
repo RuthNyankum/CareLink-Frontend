@@ -7,7 +7,7 @@ const MedicalInfo = () => {
         Medical Information
       </h1>
 
-      <form action="">
+      <form action="" className="text-lg">
         <div className="flex flex-wrap -mx-2 mb-4">
           <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
             <label

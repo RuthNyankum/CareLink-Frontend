@@ -40,12 +40,14 @@
 import React, { useState } from 'react';
 import RescheduleAppointment from './rescheduleAppointment';
 import N from '../../constant';
+import Navbar from '../../component/navbar';
 
 const Reschedule = () => {
   const [showReschedule, setShowReschedule] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100 mt-28 font-poppins-regular">
+      <Navbar />
       <div className="text-center mb-8">
         <p className="text-2xl font-semibold mb-2">Hi there👋</p>
         <p className="text-xl text-gray-700 mb-6">

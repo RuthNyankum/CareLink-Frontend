@@ -19,7 +19,7 @@ const AppointmentForm = () => {
 
       <div className="mb-10 md:mb-16 text-center">
         <h1 className="text-xl md:text-2xl ">Hi there👋</h1>
-        <p className="text-sm md:text-lg">
+        <p className="text-lg md:text-xl">
           Request a new appointment in 10 seconds
         </p>
       </div>

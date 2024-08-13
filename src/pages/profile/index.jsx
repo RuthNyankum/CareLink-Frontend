@@ -4,10 +4,12 @@ import PersonalInfo from './personalInfo';
 import MedicalInfo from './medicalInfo';
 import IdVerification from './idVerify';
 import ConsentForm from './consentForm';
+import Navbar from '../../component/navbar';
 
 const Profile = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 p-4 mt-32">
+      <Navbar />
       <div className="relative bg-gray-800 rounded-md shadow-md p-8 w-full max-w-6xl flex flex-col items-center font-poppins-regular">
         {/* Background Image */}
         <div
@@ -21,12 +23,14 @@ const Profile = () => {
         {/* Content */}
         <div className="relative z-10 w-full max-w-4xl">
           <div>
-            <h1 className="text-white text-3xl font-bold mb-4 text-center">
+            <h1 className="text-white text-4xl font-bold mb-4 text-center">
               Profile
             </h1>
-            <h1 className="ml-11 text-white mb-5">LOGO</h1>
+            {/* <h1 className="ml-11 text-white mb-5">LOGO</h1> */}
             <h2 className="ml-11 text-white text-3xl">Welcome</h2>
-            <p className="ml-11 text-white ">Let us know more about yourself</p>
+            <p className="ml-11 text-lg text-white ">
+              Let us know more about yourself
+            </p>
           </div>
 
           <div className="bg-gray-900 bg-opacity-75 p-6 rounded-md">

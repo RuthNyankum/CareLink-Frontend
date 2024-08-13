@@ -47,7 +47,7 @@ const CancelAppointment = ({ currentAppointment, onClose }) => {
           Are you sure you want to cancel your appointment?
         </p>
 
-        <form>
+        <form className="text-lg">
           <label
             htmlFor="reason"
             className="block mb-2 font-semibold text-white text-lg"

@@ -147,10 +147,12 @@
 import React from 'react';
 import ContactForm from './contactForm';
 import Location from './location';
+import Navbar from '../../component/navbar';
 
 const Contact = () => {
   return (
     <div className="mt-24 ">
+      <Navbar />
       <ContactForm />
       <Location />
     </div>
