@@ -9,17 +9,17 @@ const AdminDashboard = () => {
       {/* <AdminDashboardLayout /> */}
       <div className="min-h-screen bg-black flex justify-center  mx-28">
         <div className="w-full max-w-7xl bg-gray-900 text-white p-4 mx-4 rounded-lg">
-          <div className="flex justify-between mb-7">
+          {/* <div className="flex justify-between mb-7">
             <h1>Logo</h1>
 
             <div className="flex">
               <img src="" alt="admin" />
               <span>Admin</span>
             </div>
-          </div>
+          </div> */}
 
-          <div className="flex flex-col items-start mb-8">
-            <h1 className="text-3xl font-bold mb-4">Welcome, Admin</h1>
+          <div className="flex flex-col items-start mb-8 mt-4">
+            <h1 className="text-3xl font-bold mb-4">Welcome Dr Snow</h1>
             <p className="text-lg">
               Start your day by managing new appointments
             </p>

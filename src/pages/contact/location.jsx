@@ -16,11 +16,11 @@ const defaultCenter = [5.6037, -0.187]; // Coordinates for Accra, Ghana
 
 const Location = () => {
   return (
-    <div className="flex justify-center items-center  bg-gray-900 p-6">
+    <div className="flex justify-center items-center  bg-gray-900 p-6 ">
       <div className="bg-gray-800 bg-cover bg-center rounded-md shadow-md p-8 w-full max-w-5xl mx-auto">
-        <h1 className="text-black text-3xl font-bold mb-4">Our Location</h1>
-        <p className="text-black text-lg mb-4">You can find us at:</p>
-        <p className="text-black mb-8 text-lg">
+        <h1 className="text-white text-3xl font-bold mb-4">Our Location</h1>
+        <p className="text-white text-lg mb-4">You can find us at:</p>
+        <p className="text-white mb-8 text-lg">
           Independence Ave, Accra, Ghana
         </p>
         <div className="w-full h-64 mb-8">
@@ -38,7 +38,7 @@ const Location = () => {
             </Marker>
           </MapContainer>
         </div>
-        <div className="text-black">
+        <div className="text-white">
           <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
           <p className="text-lg">
             <strong>Phone:</strong> (233) 123-456-789

@@ -144,17 +144,42 @@
 
 // export default Contact;
 
+// import React from 'react';
+// import ContactForm from './contactForm';
+// import Location from './location';
+// import Navbar from '../../component/navbar';
+// import Footer from '../../component/footer';
+
+// const Contact = () => {
+//   return (
+//     <div className="mt-24 ">
+//       <Navbar />
+//       <ContactForm />
+//       <Location />
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Contact;
+
 import React from 'react';
 import ContactForm from './contactForm';
 import Location from './location';
 import Navbar from '../../component/navbar';
+import Footer from '../../component/footer';
+import abstract from '../../assets/images/abs.jpeg';
 
 const Contact = () => {
   return (
-    <div className="mt-24 ">
+    <div
+      className=" bg-cover bg-center"
+      style={{ backgroundImage: `url(${abstract})` }}
+    >
       <Navbar />
       <ContactForm />
       <Location />
+      <Footer />
     </div>
   );
 };

@@ -106,9 +106,7 @@ const AboutHero = () => {
         <div className="flex-1 text-center lg:text-left lg:px-8">
           <div className="flex items-center gap-4 justify-center lg:justify-start ">
             <span className="font-bold text-3xl">About</span>
-            <span className="font-bold text-secondary text-[3rem]">
-              CareLink
-            </span>
+            <span className="font-bold text-primary text-[3rem]">CareLink</span>
           </div>
 
           <p className="mb-4 text-justify text-lg">
@@ -149,7 +147,7 @@ const AboutHero = () => {
       >
         <path
           d="M200 50 Q600 350 1000 50" // Adjusted path for longer dash line
-          stroke="#4ADEDE"
+          stroke="#ee861f"
           strokeWidth="4"
           strokeDasharray="30 20" // Increased dashes for a better fit
           className="animate-dash"

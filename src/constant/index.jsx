@@ -92,11 +92,11 @@ const N = {
     //   name: 'Dr. Michelle Baker',
     //   specialty: 'Dermatologist',
     // },
-    {
-      img: lisa,
-      name: 'Dr. Lisa Foster',
-      specialty: 'General Physician',
-    },
+    // {
+    //   img: lisa,
+    //   name: 'Dr. Lisa Foster',
+    //   specialty: 'General Physician',
+    // },
   ],
 
   TESTIMONIALSDATA: [
@@ -159,22 +159,22 @@ const N = {
       doctorAvatar: 'https://via.placeholder.com/40',
       statusColor: 'text-red-500',
     },
-    // {
-    //   patient: 'Drew Cano',
-    //   date: 'Jan 8, 2022',
-    //   status: 'Scheduled',
-    //   doctor: 'Dr. Hardik Sharma',
-    //   doctorAvatar: 'https://via.placeholder.com/40',
-    //   statusColor: 'text-green-500',
-    // },
-    // {
-    //   patient: 'Natali Craig',
-    //   date: 'Jan 6, 2022',
-    //   status: 'Pending',
-    //   doctor: 'Dr. Alyana Cruz',
-    //   doctorAvatar: 'https://via.placeholder.com/40',
-    //   statusColor: 'text-yellow-500',
-    // },
+    {
+      patient: 'Drew Cano',
+      date: 'Jan 8, 2022',
+      status: 'Scheduled',
+      doctor: 'Dr. Hardik Sharma',
+      doctorAvatar: 'https://via.placeholder.com/40',
+      statusColor: 'text-green-500',
+    },
+    {
+      patient: 'Natali Craig',
+      date: 'Jan 6, 2022',
+      status: 'Pending',
+      doctor: 'Dr. Alyana Cruz',
+      doctorAvatar: 'https://via.placeholder.com/40',
+      statusColor: 'text-yellow-500',
+    },
   ],
 
   OVERVIEW: [

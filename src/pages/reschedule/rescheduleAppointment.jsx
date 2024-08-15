@@ -125,7 +125,7 @@
 // export default RescheduleAppointment;
 
 import React from 'react';
-import abstract from '../../assets/images/abstract.jpg';
+import abstract from '../../assets/images/abs.jpeg';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const RescheduleAppointment = ({ currentAppointment, onClose }) => {
@@ -138,22 +138,16 @@ const RescheduleAppointment = ({ currentAppointment, onClose }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-6 md:p-12 lg:p-16 mt-4">
-      <div
-        className="relative bg-cover bg-center bg-no-repeat p-6 md:p-12 lg:p-16 rounded-xl shadow-lg w-full max-w-4xl text-lg"
-        style={{ backgroundImage: `url(${abstract})`, opacity: 0.8 }}
-      >
-        {/* Optional background overlay for readability */}
-        <div className="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
-
-        <div className="relative z-10 p-6 md:p-12 lg:p-16">
+      <div className="relative bg-cover bg-center bg-no-repeat p-6 md:p-5 lg:p-16 rounded-xl shadow-lg w-full max-w-4xl text-lg">
+        <div className="relative z-10 p-6 md:p-12 lg:p-16 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-white"
+            className="absolute top-4 right-4 text-white hover:text-gray-600"
           >
             <XMarkIcon className="h-6 w-6" />
           </button>
 
-          <h1 className="text-2xl md:text-4xl font-semibold text-center mb-4 text-white mt-0">
+          <h1 className="text-2xl md:text-4xl font-semibold text-center mb-4 text-white">
             Reschedule Appointment
           </h1>
           <p className="text-center mb-8 text-white">
@@ -224,7 +218,7 @@ const RescheduleAppointment = ({ currentAppointment, onClose }) => {
               <button
                 type="button"
                 onClick={onClose}
-                className="px-6 py-3 bg-secondary text-white rounded-lg hover:bg-gray-400 focus:outline-none"
+                className="px-6 py-3   text-white rounded-lg hover:bg-gray-400 focus:outline-none"
               >
                 Cancel
               </button>

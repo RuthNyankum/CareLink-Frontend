@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8  mt-3">
+    <footer className="bg-black/85 text-white py-8  mt-3">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center font-poppins-regular">
         {/* About Section */}
         <div className="text-center md:text-left mb-6 md:mb-0">

@@ -24,6 +24,7 @@
     "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.25.1",
     "react-toastify": "^10.0.5",
+    "react-typed": "^2.0.12",
     "reactflow": "^11.11.4"
   },
   "devDependencies": {

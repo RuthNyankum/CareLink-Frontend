@@ -25,9 +25,9 @@ const Department = () => {
               {departments.map((department) => (
                 <li
                   key={department.name}
-                  className={`flex items-center py-2 px-4 cursor-pointer hover:bg-teal-200 transition-colors duration-300 ${
+                  className={`flex items-center py-2 px-4 cursor-pointer hover:bg-primary/50   transition-colors duration-300 ${
                     selectedDepartment === department.name
-                      ? 'bg-teal-500 text-white'
+                      ? 'bg-primary text-white'
                       : ''
                   }`}
                   onClick={() => handleDepartmentClick(department.name)}
@@ -64,7 +64,7 @@ const Department = () => {
                     )
                   )}
                 </div>
-                <button className="px-4 py-2 bg-teal-500 text-white rounded-lg w-max text-lg">
+                <button className="px-4 py-2 bg-primary/70 text-white rounded-lg w-max text-lg">
                   Contact Us
                 </button>
               </div>

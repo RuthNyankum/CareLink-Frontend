@@ -190,7 +190,7 @@ const FormLogin = () => {
       // addToLocalStorage(res.data.accessToken, res.data.user);
       toast.success(res.data);
       setTimeout(() => {
-        navigate('/dashboard');
+        navigate('/about-us');
       }, 1000); // Add a delay to see the toast
 
       // console.log('res', res.data, res);

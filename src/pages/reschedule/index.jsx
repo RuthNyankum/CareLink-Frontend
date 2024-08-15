@@ -37,36 +37,83 @@
 
 // export default Reschedule;
 
+// import React, { useState } from 'react';
+// import RescheduleAppointment from './rescheduleAppointment';
+// import N from '../../constant';
+// import Navbar from '../../component/navbar';
+// import Footer from '../../component/footer';
+
+// const Reschedule = () => {
+//   const [showReschedule, setShowReschedule] = useState(false);
+
+//   return (
+//     <>
+//       <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100 mt-28 font-poppins-regular">
+//         <Navbar />
+//         <div className="text-center mb-8">
+//           <p className="text-2xl font-semibold mb-2">Hi there👋</p>
+//           <p className="text-xl text-gray-700 mb-6">
+//             Do you want to reschedule your appointment?
+//           </p>
+//         </div>
+//         <button
+//           onClick={() => setShowReschedule(true)}
+//           className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark focus:outline-none"
+//         >
+//           Reschedule Appointment
+//         </button>
+//         {showReschedule && (
+//           <RescheduleAppointment
+//             currentAppointment={N.CURRENTAPPOINTMENT}
+//             onClose={() => setShowReschedule(false)}
+//           />
+//         )}
+//       </div>
+//       <Footer />
+//     </>
+//   );
+// };
+
+// export default Reschedule;
+
 import React, { useState } from 'react';
 import RescheduleAppointment from './rescheduleAppointment';
 import N from '../../constant';
 import Navbar from '../../component/navbar';
+import Footer from '../../component/footer';
+import backgroundImage from '../../assets/images/abs.jpeg'; // Ensure this path is correct
 
 const Reschedule = () => {
   const [showReschedule, setShowReschedule] = useState(false);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100 mt-28 font-poppins-regular">
+    <>
       <Navbar />
-      <div className="text-center mb-8">
-        <p className="text-2xl font-semibold mb-2">Hi there👋</p>
-        <p className="text-xl text-gray-700 mb-6">
-          Do you want to reschedule your appointment?
-        </p>
-      </div>
-      <button
-        onClick={() => setShowReschedule(true)}
-        className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark focus:outline-none"
+      <div
+        className="flex flex-col items-center justify-center min-h-screen p-4 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        Reschedule Appointment
-      </button>
-      {showReschedule && (
-        <RescheduleAppointment
-          currentAppointment={N.CURRENTAPPOINTMENT}
-          onClose={() => setShowReschedule(false)}
-        />
-      )}
-    </div>
+        <div className="text-center mb-8 bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-xl shadow-lg">
+          <p className="text-2xl font-semibold mb-2 text-white">Hi there👋</p>
+          <p className="text-xl text-white/75 mb-6">
+            Do you want to reschedule your appointment?
+          </p>
+          <button
+            onClick={() => setShowReschedule(true)}
+            className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark focus:outline-none"
+          >
+            Reschedule Appointment
+          </button>
+        </div>
+        {showReschedule && (
+          <RescheduleAppointment
+            currentAppointment={N.CURRENTAPPOINTMENT}
+            onClose={() => setShowReschedule(false)}
+          />
+        )}
+      </div>
+      <Footer />
+    </>
   );
 };
 

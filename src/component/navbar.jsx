@@ -34,9 +34,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-primary p-4 shadow-lg z-20 font-poppins-regular">
-      <div className="flex justify-between items-center max-w-4xl mx-auto text-xl">
+      <div className="flex justify-between items-center max-w-6xl mx-auto text-xl">
         <Link to="/">
-          <img src="path_to_logo" alt="Logo" className="h-8 w-8" />
+          <p className="font-bold text-4xl text-white">CARELINK.</p>
         </Link>
 
         <div className="flex md:hidden">
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <>
                   <button
                     onClick={() => toggleDropdown(index)}
-                    className="flex items-center text-white hover:text-gray-700 focus:outline-none"
+                    className="flex items-center text-white hover:text-gray-300 focus:outline-none"
                   >
                     {item.name}
                     <ChevronDownIcon
@@ -73,12 +73,12 @@ const Navbar = () => {
                     />
                   </button>
                   {dropdownOpen === index && (
-                    <div className="absolute left-0 mt-2 w-48 bg-secondary text-black rounded-lg shadow-lg">
+                    <div className="absolute left-0 mt-2 w-48 bg-primary/60 text-black rounded-lg shadow-lg z-10 md:w-56">
                       {item.subItems.map((subItem) => (
                         <Link
                           key={subItem.name}
                           to={subItem.path}
-                          className="block px-4 py-2 hover:bg-primary"
+                          className="block px-4 py-2 hover:bg-primary hover:text-white"
                           onClick={() => setDropdownOpen(null)}
                         >
                           {subItem.name}
@@ -88,7 +88,7 @@ const Navbar = () => {
                   )}
                 </>
               ) : (
-                <Link to={item.path} className="text-white hover:text-gray-700">
+                <Link to={item.path} className="text-white hover:text-gray-300">
                   {item.name}
                 </Link>
               )}

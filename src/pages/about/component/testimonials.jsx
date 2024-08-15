@@ -3,7 +3,7 @@ import N from '../../../constant';
 
 const Testimonials = () => {
   return (
-    <div className="my-24 flex flex-col justify-center items-center bg-dark px-4 py-8">
+    <div className="my-24 flex flex-col justify-center items-center bg-primary px-4 py-8">
       <h1 className="font-bold text-5xl mb-12 text-center text-white">
         User Testimonials
       </h1>

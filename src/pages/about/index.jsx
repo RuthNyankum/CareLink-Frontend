@@ -7,6 +7,7 @@ import Department from './component/department';
 import Testimonials from './component/testimonials';
 import FutureGoals from './component/futureGoals';
 import Navbar from '../../component/navbar';
+import Footer from '../../component/footer';
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
       <Department />
       <Testimonials />
       <FutureGoals />
+      <Footer />
     </div>
   );
 };
