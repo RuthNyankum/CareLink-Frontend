@@ -200,6 +200,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 import FormLoader from '../../component/formLoader';
+import Navbar from '../../component/navbar';
 
 const FormSignup = () => {
   const {
@@ -241,112 +242,124 @@ const FormSignup = () => {
     setPasswordVisible(!passwordVisible);
   };
 
+  const goToHome = () => {
+    navigate('/');
+  };
   return (
-    <div className="bg-[#2222] w-full md:w-1/2 pt-7 px-6 md:px-32 rounded-tl-3xl rounded-bl-3xl font-poppins-regular">
-      <div className="text-[2rem] mb-8 md:mb-10 text-white">LOGO</div>
-      <div className="text-white">
-        <div className="mb-8 md:mb-14">
-          <h1 className="text-[1.5rem]">Hi there....</h1>
-          <p className="text-[1rem]">Register to get started</p>
-        </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
-          <label htmlFor="firstName" className="block">
-            Firstname
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              placeholder="Ruth"
-              className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
-              {...register('firstName', {
-                required: 'Your first name is required!',
-              })}
-            />
-            {errors.firstName && <span>{errors.firstName.message}</span>}
-          </label>
-
-          <label htmlFor="lastName" className="block">
-            Lastname
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              placeholder="Brown"
-              className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
-              {...register('lastName', {
-                required: 'Your last name is required!',
-              })}
-            />
-            {errors.lastName && <span>{errors.lastName.message}</span>}
-          </label>
-
-          <label htmlFor="email" className="block">
-            Email
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@gmail.com"
-              className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
-              {...register('email', {
-                required: 'Your email is required!',
-              })}
-            />
-            {errors.email && <span>{errors.email.message}</span>}
-          </label>
-
-          <label htmlFor="phoneNumber" className="block">
-            Phone Number
-            <input
-              type="phoneNumber"
-              name="phoneNumber"
-              id="phoneNumber"
-              placeholder="123456789"
-              className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
-              {...register('phoneNumber')}
-            />
-            {errors.phoneNumber && <span>{errors.phoneNumber.message}</span>}
-          </label>
-
-          <label htmlFor="password" className="block relative">
-            Password
-            <input
-              type={passwordVisible ? 'text' : 'password'}
-              name="password"
-              id="password"
-              placeholder="********"
-              className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black pr-10"
-              {...register('password', {
-                required: 'Your password is required!',
-              })}
-            />
-            {errors.password && <span>{errors.password.message}</span>}
-            <button
-              type="button"
-              onClick={togglePasswordVisibility}
-              className="absolute top-1/2 right-4 bottom-9 transform -translate-y-1/2"
-            >
-              {passwordVisible ? (
-                <IoEyeOffOutline className="w-6 h-6 text-black" />
-              ) : (
-                <EyeIcon className="w-6 h-6 text-black" />
-              )}
-            </button>
-          </label>
-
-          <button
-            type="submit"
-            className="w-full h-14 px-4 py-2 mt-4 bg-primary text-white rounded-lg"
+    <>
+      <Navbar />
+      <div className="bg-[#2222] w-full md:w-1/2 pt-7 px-6 md:px-32 rounded-tl-3xl rounded-bl-3xl font-poppins-regular">
+        <button onClick={goToHome} className="my-12 text-secondary underline">
+          ← Go back
+        </button>
+        {/* <div className="text-[2rem] mb-8 md:mb-10 text-white">LOGO</div> */}
+        <div className="text-white">
+          <div className="mb-8 md:mb-14">
+            <h1 className="text-[1.5rem]">Hi there....</h1>
+            <p className="text-[1rem]">Register to get started</p>
+          </div>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col gap-5"
           >
-            {isSubmitting ? <FormLoader /> : 'Get Started'}
-          </button>
-        </form>
-        <ToastContainer />
-        <p className="mt-8 md:mt-16 lg:mt-28 text-center text-white">
-          &copy; 2024 CareLink
-        </p>
+            <label htmlFor="firstName" className="block">
+              Firstname
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Ruth"
+                className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
+                {...register('firstName', {
+                  required: 'Your first name is required!',
+                })}
+              />
+              {errors.firstName && <span>{errors.firstName.message}</span>}
+            </label>
+
+            <label htmlFor="lastName" className="block">
+              Lastname
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Brown"
+                className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
+                {...register('lastName', {
+                  required: 'Your last name is required!',
+                })}
+              />
+              {errors.lastName && <span>{errors.lastName.message}</span>}
+            </label>
+
+            <label htmlFor="email" className="block">
+              Email
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+                className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
+                {...register('email', {
+                  required: 'Your email is required!',
+                })}
+              />
+              {errors.email && <span>{errors.email.message}</span>}
+            </label>
+
+            <label htmlFor="phoneNumber" className="block">
+              Phone Number
+              <input
+                type="phoneNumber"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="123456789"
+                className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black"
+                {...register('phoneNumber')}
+              />
+              {errors.phoneNumber && <span>{errors.phoneNumber.message}</span>}
+            </label>
+
+            <label htmlFor="password" className="block relative">
+              Password
+              <input
+                type={passwordVisible ? 'text' : 'password'}
+                name="password"
+                id="password"
+                placeholder="********"
+                className="w-full h-14 px-4 py-2 placeholder:text-lg rounded-lg text-black pr-10"
+                {...register('password', {
+                  required: 'Your password is required!',
+                })}
+              />
+              {errors.password && <span>{errors.password.message}</span>}
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="absolute top-1/2 right-4 bottom-9 transform -translate-y-1/2"
+              >
+                {passwordVisible ? (
+                  <IoEyeOffOutline className="w-6 h-6 text-black" />
+                ) : (
+                  <EyeIcon className="w-6 h-6 text-black" />
+                )}
+              </button>
+            </label>
+
+            <button
+              type="submit"
+              className="w-full h-14 px-4 py-2 mt-4 bg-primary text-white rounded-lg"
+            >
+              {isSubmitting ? <FormLoader /> : 'Get Started'}
+            </button>
+          </form>
+          <ToastContainer />
+          <p className="mt-8 md:mt-16 lg:mt-28 text-center text-white">
+            &copy; 2024 CareLink
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

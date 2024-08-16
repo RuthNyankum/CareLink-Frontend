@@ -81,7 +81,7 @@ import RescheduleAppointment from './rescheduleAppointment';
 import N from '../../constant';
 import Navbar from '../../component/navbar';
 import Footer from '../../component/footer';
-import backgroundImage from '../../assets/images/abs.jpeg'; // Ensure this path is correct
+import backgroundImage from '../../assets/images/abs2.jpg';
 
 const Reschedule = () => {
   const [showReschedule, setShowReschedule] = useState(false);
@@ -90,10 +90,13 @@ const Reschedule = () => {
     <>
       <Navbar />
       <div
-        className="flex flex-col items-center justify-center min-h-screen p-4 bg-cover bg-center bg-no-repeat"
+        className="relative flex flex-col items-center justify-center min-h-screen p-4 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="text-center mb-8 bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-xl shadow-lg">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        <div className="relative z-10 text-center mb-8 bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-xl shadow-lg">
           <p className="text-2xl font-semibold mb-2 text-white">Hi there👋</p>
           <p className="text-xl text-white/75 mb-6">
             Do you want to reschedule your appointment?

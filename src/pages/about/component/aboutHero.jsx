@@ -147,7 +147,7 @@ const AboutHero = () => {
       >
         <path
           d="M200 50 Q600 350 1000 50" // Adjusted path for longer dash line
-          stroke="#ee861f"
+          stroke="#2C74B4"
           strokeWidth="4"
           strokeDasharray="30 20" // Increased dashes for a better fit
           className="animate-dash"

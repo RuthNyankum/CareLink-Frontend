@@ -41,7 +41,7 @@ const Location = () => {
         <div className="text-white">
           <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
           <p className="text-lg">
-            <strong>Phone:</strong> (233) 123-456-789
+            <strong>Phone:</strong> (233) 500-610-059
           </p>
           <p className="text-lg">
             <strong>Email:</strong> contact@carelink.com

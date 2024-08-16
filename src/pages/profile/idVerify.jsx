@@ -40,7 +40,7 @@ const IdVerification = () => {
             id="id"
             value={idType}
             onChange={handleIdTypeChange}
-            className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded"
+            className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded text-white"
           >
             <option value="">Select an option</option>
             <option value="NHIS">NHIS</option>
@@ -64,7 +64,7 @@ const IdVerification = () => {
                 value={otherIdType}
                 onChange={(e) => setOtherIdType(e.target.value)}
                 placeholder="Enter ID type"
-                className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded"
+                className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded text-white"
               />
             </div>
           )}

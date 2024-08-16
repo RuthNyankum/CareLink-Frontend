@@ -30,7 +30,7 @@ const ConsentForm = () => {
         Consent and Privacy
       </h2>
       <div className="space-y-4">
-        <label className="flex items-center text-black">
+        <label className="flex items-center text-white">
           <input
             type="checkbox"
             name="treatment"
@@ -42,7 +42,7 @@ const ConsentForm = () => {
             I consent to receive treatment for my health condition.
           </span>
         </label>
-        <label className="flex items-center text-black">
+        <label className="flex items-center text-white">
           <input
             type="checkbox"
             name="disclosure"
@@ -55,7 +55,7 @@ const ConsentForm = () => {
             treatment purposes.
           </span>
         </label>
-        <label className="flex items-center text-black">
+        <label className="flex items-center text-white">
           <input
             type="checkbox"
             name="privacyPolicy"
@@ -70,7 +70,7 @@ const ConsentForm = () => {
       </div>
       <button
         type="submit"
-        className="mt-6 w-full bg-primary text-black py-2 px-4 rounded-md hover:bg-secondary"
+        className="mt-6 w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary"
       >
         Submit and continue
       </button>

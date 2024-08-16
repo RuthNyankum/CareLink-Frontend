@@ -321,10 +321,16 @@ const AdminLogin = () => {
     setPasswordVisible(!passwordVisible);
   };
 
+  const goToHome = () => {
+    navigate('/');
+  };
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-800 font-poppins-regular">
       <div className="flex flex-col items-center w-full max-w-md p-6 bg-[#222] md:p-8 lg:p-12 rounded-xl">
-        <div className="text-[2rem] mb-12 text-white">LOGO</div>
+        <button onClick={goToHome} className="my-12 text-secondary underline">
+          ← Go back
+        </button>
+        {/* <div className="text-[2rem] mb-12 text-white">LOGO</div> */}
         <div className="text-white w-full">
           <div className="mb-10">
             <h1 className="text-[1.5rem]">Hi Doc...</h1>

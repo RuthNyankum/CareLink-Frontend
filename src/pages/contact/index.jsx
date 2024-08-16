@@ -144,42 +144,27 @@
 
 // export default Contact;
 
-// import React from 'react';
-// import ContactForm from './contactForm';
-// import Location from './location';
-// import Navbar from '../../component/navbar';
-// import Footer from '../../component/footer';
-
-// const Contact = () => {
-//   return (
-//     <div className="mt-24 ">
-//       <Navbar />
-//       <ContactForm />
-//       <Location />
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
 import React from 'react';
 import ContactForm from './contactForm';
 import Location from './location';
 import Navbar from '../../component/navbar';
 import Footer from '../../component/footer';
-import abstract from '../../assets/images/abs.jpeg';
+import abstract from '../../assets/images/abs2.jpg';
 
 const Contact = () => {
   return (
     <div
-      className=" bg-cover bg-center"
+      className="relative min-h-screen bg-cover bg-center p-6 md:p-12 lg:p-16 font-poppins-regular text-lg"
       style={{ backgroundImage: `url(${abstract})` }}
     >
-      <Navbar />
-      <ContactForm />
-      <Location />
-      <Footer />
+      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>{' '}
+      {/* Overlay */}
+      <div className="relative z-10">
+        <Navbar />
+        <ContactForm />
+        <Location />
+        <Footer />
+      </div>
     </div>
   );
 };
