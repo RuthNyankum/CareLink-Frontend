@@ -90,11 +90,11 @@ const PersonalInfo = () => {
               id="firstname"
               placeholder="Ruth"
               className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded"
-              {...register('firstName', { required: true })}
+              {...register('firstName')}
             />
-            {errors.firstName && (
+            {/* {errors.firstName && (
               <p className="text-red-500">First Name is required</p>
-            )}
+            )} */}
           </div>
 
           <div className="w-full md:w-1/2 px-2">
@@ -110,11 +110,11 @@ const PersonalInfo = () => {
               id="lastname"
               placeholder="Doe"
               className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded"
-              {...register('lastName', { required: true })}
+              {...register('lastName')}
             />
-            {errors.lastName && (
+            {/* {errors.lastName && (
               <p className="text-red-500">Last Name is required</p>
-            )}
+            )} */}
           </div>
         </div>
 
@@ -150,12 +150,12 @@ const PersonalInfo = () => {
               id="phoneNumber"
               placeholder="123-456-7890"
               className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded"
-              {...register('phoneNumber', { required: true })}
+              {...register('phoneNumber')}
             />
 
-            {errors.phoneNumber && (
+            {/* {errors.phoneNumber && (
               <p className="text-red-500">Phone Number is required</p>
-            )}
+            )} */}
           </div>
         </div>
 
@@ -172,11 +172,11 @@ const PersonalInfo = () => {
               name="dateOfBirth"
               id="dateOfBirth"
               className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded"
-              {...register('dateOfBirth', { required: true })}
+              {...register('dateOfBirth')}
             />
-            {errors.dateOfBirth && (
+            {/* {errors.dateOfBirth && (
               <p className="text-red-500">Date of Birth is required</p>
-            )}
+            )} */}
           </div>
 
           <div className="w-full md:w-1/2 px-2">
@@ -191,7 +191,7 @@ const PersonalInfo = () => {
               id="sex"
               name="sex"
               className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded bg-white text-black"
-              {...register('sex', { required: true })}
+              {...register('sex')}
             >
               <option value="" disabled>
                 Select Sex
@@ -200,7 +200,7 @@ const PersonalInfo = () => {
               <option value="Female">Female</option>
               <option value="Other">Other</option>
             </select>
-            {errors.sex && <p className="text-red-500">Sex is required</p>}
+            {/* {errors.sex && <p className="text-red-500">Sex is required</p>} */}
           </div>
         </div>
 
@@ -218,11 +218,11 @@ const PersonalInfo = () => {
               id="address"
               placeholder="14 Street, Accra"
               className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded"
-              {...register('address', { required: true })}
+              {...register('address')}
             />
-            {errors.address && (
+            {/* {errors.address && (
               <p className="text-red-500">Address is required</p>
-            )}
+            )} */}
           </div>
 
           <div className="w-full md:w-1/2 px-2">

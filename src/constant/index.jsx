@@ -42,10 +42,10 @@ const N = {
     //   name: 'Account',
     //   path: '/register',
     // },
-    {
-      name: 'Admin',
-      path: '/admin',
-    },
+    // {
+    //   name: 'Admin',
+    //   path: '/admin',
+    // },
   ],
 
   BUTTONDATA: [

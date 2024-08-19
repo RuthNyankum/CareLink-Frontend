@@ -40,7 +40,7 @@ const IdVerification = () => {
             id="id"
             value={idType}
             onChange={handleIdTypeChange}
-            className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded text-white"
+            className="w-full px-4 py-2 border h-14 border-gray-300 placeholder:text-lg rounded text-black"
           >
             <option value="">Select an option</option>
             <option value="NHIS">NHIS</option>
@@ -86,7 +86,7 @@ const IdVerification = () => {
           </div>
         </div>
 
-        <div className="mt-4">
+        {/* <div className="mt-4">
           <h2 className="block text-gray-700 mb-2 text-white">
             Scanned Copy of Identification Document
           </h2>
@@ -109,7 +109,7 @@ const IdVerification = () => {
               SVG, PNG, JPG or GIF (max. 800x400px)
             </p>
           </div>
-        </div>
+        </div> */}
       </form>
     </div>
   );
