@@ -86,7 +86,7 @@ const IdVerification = () => {
           </div>
         </div>
 
-        {/* <div className="mt-4">
+        <div className="mt-4">
           <h2 className="block text-gray-700 mb-2 text-white">
             Scanned Copy of Identification Document
           </h2>
@@ -109,7 +109,7 @@ const IdVerification = () => {
               SVG, PNG, JPG or GIF (max. 800x400px)
             </p>
           </div>
-        </div> */}
+        </div>
       </form>
     </div>
   );

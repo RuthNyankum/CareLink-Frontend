@@ -68,3 +68,90 @@ const DepartmentDoctor = () => {
 };
 
 export default DepartmentDoctor;
+
+// import React, { useState } from 'react';
+
+// const departments = [
+//   'Cardiology',
+//   'Neurology',
+//   'Dental',
+//   'Ophthalmology',
+//   'Obstetrics and Gynecology (OB/GYN)',
+//   'Emergency',
+//   'General',
+// ];
+
+// const doctors = [
+//   'Dr Yaw Sekyi',
+//   'Dr Micheal Brown',
+//   'Dr Ruth Snow',
+//   'Dr Richard Lewis',
+//   'Dr Anthony Spencer',
+//   'Dr Vidash Daizey',
+//   'Dr Sarah Mitchell',
+//   'Dr Daniel Sidsaya',
+//   'Dr Victoria Hill',
+//   'Dr Lisa Foster',
+//   'Dr Thomas Carter',
+//   'Dr Stephanie Collins',
+// ];
+
+// const DepartmentDoctor = () => {
+//   const [selectedDepartment, setSelectedDepartment] = useState('');
+//   const [selectedDoctor, setSelectedDoctor] = useState('');
+
+//   const handleDepartmentChange = (e) => {
+//     setSelectedDepartment(e.target.value);
+//   };
+
+//   const handleDoctorChange = (e) => {
+//     setSelectedDoctor(e.target.value);
+//   };
+
+//   return (
+//     <div className="max-w-4xl mx-auto">
+//       <div className="flex flex-col md:flex-row gap-5 mt-6 ml-4 mr-4">
+//         <label htmlFor="department" className="block w-full text-lg">
+//           Select Department
+//           <select
+//             id="department"
+//             name="department"
+//             className="w-full h-14 px-4 py-2 mt-2 text-black rounded-lg"
+//             value={selectedDepartment}
+//             onChange={handleDepartmentChange}
+//           >
+//             <option value="" disabled>
+//               Select a department
+//             </option>
+//             {departments.map((department, index) => (
+//               <option key={index} value={department}>
+//                 {department}
+//               </option>
+//             ))}
+//           </select>
+//         </label>
+//         <label htmlFor="doctor" className="block w-full text-lg">
+//           Select Doctor
+//           <select
+//             id="doctor"
+//             name="doctor"
+//             className="w-full h-14 px-4 py-2 mt-2 text-black rounded-lg"
+//             value={selectedDoctor}
+//             onChange={handleDoctorChange}
+//           >
+//             <option value="" disabled>
+//               Select a doctor
+//             </option>
+//             {doctors.map((doctor, index) => (
+//               <option key={index} value={doctor}>
+//                 {doctor}
+//               </option>
+//             ))}
+//           </select>
+//         </label>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default DepartmentDoctor;

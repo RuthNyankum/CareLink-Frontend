@@ -367,6 +367,18 @@ const FormLogin = () => {
   const onSubmit = async (data) => {
     console.log(data);
     setIsSubmitting(true);
+
+    let payload = {
+      patient: data.patient,
+      relationship: data.relationship,
+      department: data.department,
+      doctors: data.doctors,
+      reasonForAppointment: data.reasonForAppointment,
+      appointmentDate: data.appointmentDate,
+      appointmentTime: data.appointmentTime,
+      status: data.status,
+    };
+
     try {
       const res = await apiLogIn({
         email: data.email,
