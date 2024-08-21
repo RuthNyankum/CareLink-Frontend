@@ -671,7 +671,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const AppointmentForm = () => {
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  // const navigate = useNavigate(); // Initialize the useNavigate hook
   const [appointmentFor, setAppointmentFor] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
@@ -715,9 +715,9 @@ const AppointmentForm = () => {
       setIsSubmitting(false);
 
       // Redirect to the dashboard after a short delay (e.g., 2 seconds)
-      setTimeout(() => {
-        navigate('/dashboard'); // Redirect to the dashboard page
-      }, 2000);
+      // setTimeout(() => {
+      //   navigate('/dashboard'); // Redirect to the dashboard page
+      // }, 2000);
     }, 1000); // Simulate a delay
   };
 

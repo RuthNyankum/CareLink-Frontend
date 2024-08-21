@@ -391,7 +391,7 @@ const FormLogin = () => {
 
       toast.success('Login successful!');
       setTimeout(() => {
-        navigate('/about-us');
+        navigate('/dashboard');
       }, 1000); // Add a delay to see the toast
     } catch (error) {
       console.log(error);
